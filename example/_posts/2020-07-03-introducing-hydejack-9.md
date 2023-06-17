@@ -9,6 +9,8 @@ description: >
 sitemap: false
 ---
 
+
+손용수 고마워
 Version 9 is the most complete version of Hydejack yet.
 {:.lead}
 
