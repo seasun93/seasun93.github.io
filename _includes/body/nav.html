@@ -1,6 +1,7 @@
 <span class="sr-only">{{ site.data.strings.navigation | default:"Navigation" }}{{ site.data.strings.colon | default:":" }}</span>
 <ul>
   {% if site.menu %}
+    {{site}}
     {% for node in site.menu %}
       {% assign url = node.url | default: node.href %}
       <li>

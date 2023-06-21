@@ -1,6 +1,6 @@
 ---
 # Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
-#
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -18,7 +18,6 @@ layout: compress
 ---
 
 {% assign plugins = site.plugins | default:site.gems %}
-
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] | default:site.author %}
 
 {% assign image       = page.accent_image | default:site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
