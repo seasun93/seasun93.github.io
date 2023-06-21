@@ -1,4 +1,8 @@
 .layout-grid .related-posts {
     display:flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+}
+.layout-grid .related-posts li {
+    width: 33%;
 }
