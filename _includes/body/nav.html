@@ -9,7 +9,6 @@
         <ul>
           {% for submenu in node.submenu %}
           {% assign suburl = submenu.url%}
-          {{suburl}}
           <li>
             <a
             {% if forloop.first %}id="_drawer--opened"{% endif %}
