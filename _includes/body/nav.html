@@ -1,10 +1,34 @@
 <span class="sr-only">{{ site.data.strings.navigation | default:"Navigation" }}{{ site.data.strings.colon | default:":" }}</span>
 <ul>
   {% if site.menu %}
-    {{site}}
     {% for node in site.menu %}
-    {{node}}
       {% assign url = node.url | default: node.href %}
+      {% if node.submenu %}
+      <li>
+        {% for submenu in node.submenu %}
+          {% assign suburl = submenu.url%}
+        <ul>
+          <li>
+            <a
+            {% if forloop.first %}id="_drawer--opened"{% endif %}
+            href="{% include_cached smart-url suburl=suburl %}"
+            class="sidebar-nav-item {% if node.external  %}external{% endif %}"
+            >
+            {{ submenu.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a
+          {% if forloop.first %}id="_drawer--opened"{% endif %}
+          href="{% include_cached smart-url url=url %}"
+          class="sidebar-nav-item {% if node.external  %}external{% endif %}"
+          {% if node.rel %}rel="{{ node.rel }}"{% endif %}
+        >
+          {{ node.name | default:node.title }}
+        </a>
+      </li>
+      {% else %}
       <li>
         <a
           {% if forloop.first %}id="_drawer--opened"{% endif %}
@@ -15,6 +39,7 @@
           {{ node.name | default:node.title }}
         </a>
       </li>
+      {% endif %}
     {% endfor %}
   {% else %}
     {% assign pages = site.html_pages | where: "menu", true %}
