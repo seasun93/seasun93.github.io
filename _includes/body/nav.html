@@ -13,7 +13,7 @@
           <li>
             <a
             {% if forloop.first %}id="_drawer--opened"{% endif %}
-            href="{% include_cached smart-url suburl=suburl %}"
+            href="{{ suburl }}"
             class="sidebar-nav-item {% if node.external  %}external{% endif %}"
             >
             {{ submenu.title }}
