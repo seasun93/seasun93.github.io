@@ -87,6 +87,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-last-modified-at
 
+# Add links to the sidebar.
 menu:
   - title:             About
     url:               /about/
@@ -106,3 +107,13 @@ menu:
         url:            /err-react/
       - title:           Github
         url:            /err-github/
+
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © :year. All rights reserved.
+
+# Format of the permalinks
+permalink:             /:categories/:year-:month-:day-:title/
+
+# Pagination configuration (used by the `blog` layout)
+paginate:              10
+paginate_path:         /:num/
