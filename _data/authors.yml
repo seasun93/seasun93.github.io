@@ -2,7 +2,7 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <전> <다해>
+  name:              <다해> <전>
   email:             <seasun9376@gmail.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
@@ -22,9 +22,9 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    #twitter:         <username>
+    github:          <seasun93>
+    email:           <seasun9376@gmail.com>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -64,11 +64,11 @@ author1:
 
 # Another author (optional)
 author2:
-  name:              <전> <다해>
+  name:              <다해> <전>
   email:             <seasun9376@gmail.com>
   about:             |
     공부중인 개발자 전다해입니다.
 
   picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+  #twitter:           <username>
+  github:            <seasun93>
