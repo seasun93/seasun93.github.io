@@ -90,6 +90,8 @@ date_formats:
   related_post:        '%d %b %Y'
   list_group_by:       '%Y'
   list_entry:          '%d %b'
+  grid_group_by:       '%Y'
+  grid_entry:          '%d %b'
   project:             '%Y'
   projects_group_by:   '%Y'
   resume:              '%b %Y'
