@@ -24,23 +24,27 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 
 
 
+  <meta name="robots" content="noindex">
+
 
 
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Licenses | 시선</title>
+<title>Build | 시선</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Licenses" />
+<meta property="og:title" content="Build" />
 <meta property="og:locale" content="ko" />
-<link rel="canonical" href="http://localhost:4000/licenses/" />
-<meta property="og:url" content="http://localhost:4000/licenses/" />
+<meta name="description" content="This chapters shows how to prepare your Hydejack site for a production build and deployment on 3rd party hosting providers." />
+<meta property="og:description" content="This chapters shows how to prepare your Hydejack site for a production build and deployment on 3rd party hosting providers." />
+<link rel="canonical" href="http://localhost:4000/docs/build.html" />
+<meta property="og:url" content="http://localhost:4000/docs/build.html" />
 <meta property="og:site_name" content="시선" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Licenses" />
+<meta property="twitter:title" content="Build" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2022-02-07T13:23:49+09:00","headline":"Licenses","url":"http://localhost:4000/licenses/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2022-02-07T13:43:00+09:00","description":"This chapters shows how to prepare your Hydejack site for a production build and deployment on 3rd party hosting providers.","headline":"Build","url":"http://localhost:4000/docs/build.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -68,7 +72,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/licenses/" hreflang="ko">
+<link rel="alternate" href="http://localhost:4000/docs/build.html" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="시선" />
 
@@ -178,7 +182,16 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>licenses</span>
+          
+          
+          <a href="/docs/">docs</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>build.html</span>
         
       </li>
     
@@ -186,28 +199,92 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 </ul></nav>
   <article class="page mb6" role="article">
   <header>
-    <h1 class="page-title">Licenses</h1>
+    <h1 class="page-title">Build</h1>
     
 
 
 
-  <div class="hr pb0"></div>
+  
+    <div class="hr pb0"></div>
+  
 
 
   </header>
 
-  <h2 id="open-source">Open Source</h2>
-<ul>
-  <li><a href="/licenses/Apache-2.0.html">Apache-2.0</a></li>
-  <li><a href="/licenses/GPL-3.0.html">GPL-3.0</a></li>
-  <li><a href="/licenses/MIT.html">MIT</a></li>
-  <li><a href="/licenses/W3C-20150513.html">W3C-20150513</a></li>
-</ul>
+  <p>This chapters shows how to prepare your Hydejack site for a production build and deployment on 3rd party hosting providers.</p>
 
-<h2 id="custom">Custom</h2>
-<ul>
-  <li><a href="/licenses/PRO.html">PRO</a></li>
-</ul>
+<ol id="markdown-toc">
+  <li><a href="#building-locally" id="markdown-toc-building-locally">Building locally</a></li>
+  <li><a href="#building-locally-with-latent-semantic-analysis" id="markdown-toc-building-locally-with-latent-semantic-analysis">Building locally with latent semantic analysis</a></li>
+  <li><a href="#github-pages" id="markdown-toc-github-pages">GitHub Pages</a></li>
+</ol>
+
+<h2 id="building-locally">Building locally</h2>
+<p>When building Hydejack it is important to set the environment variable <code class="language-plaintext highlighter-rouge">JEKYLL_ENV</code> to <code class="language-plaintext highlighter-rouge">production</code>.
+Otherwise the output will not be minified. Building itself happens via Jekyll’s <code class="language-plaintext highlighter-rouge">build</code> command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<p>This will generate the finished static files in <code class="language-plaintext highlighter-rouge">_site</code>,
+which can be deployed using the methods outlined in the <a href="https://jekyllrb.com/docs/deployment-methods/">Jekyll Documentation</a>.</p>
+
+<h2 id="building-locally-with-latent-semantic-analysis">Building locally with latent semantic analysis</h2>
+<p>By default, related posts are simply the most recent posts.
+Hydejack modifies this a bit, by showing the most recent posts of the same category or tag.
+However, the results are still pretty “unrelated”.
+To provide better results, Jekyll supports <a href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">latent semantic analysis</a> via <a href="http://www.classifier-reborn.com/"><code class="language-plaintext highlighter-rouge">classifier-reborn</code></a>’s
+<a href="http://www.classifier-reborn.com/lsi">Latent Semantic Indexer</a></p>
+
+<p>To use the <abbr title="Latent Semantic Indexer">LSI</abbr>, you first have to disable Hydejack’s default behavior,
+by setting <code class="language-plaintext highlighter-rouge">use_lsi: true</code> under the <code class="language-plaintext highlighter-rouge">hydejack</code> key in your config file.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: `_config.yml`</span>
+<span class="na">hydejack</span><span class="pi">:</span>
+  <span class="na">use_lsi</span><span class="pi">:</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<p>Then, you have to run <code class="language-plaintext highlighter-rouge">jekyll build</code> with the <code class="language-plaintext highlighter-rouge">--lsi</code> flag:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build <span class="nt">--lsi</span>
+</code></pre></div></div>
+
+<p>Note that this may take a long time.
+Once it is finished, the generated static files will be located in the <code class="language-plaintext highlighter-rouge">_site</code> directory,
+which can be deployed using the methods outlined in the <a href="https://jekyllrb.com/docs/deployment-methods/">Jekyll Documentation</a>.</p>
+
+<h2 id="github-pages">GitHub Pages</h2>
+<p>If you’re using the Starter Kit for GitHub pages, all you have to do is push your repository:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git add <span class="nb">.</span>
+<span class="nv">$ </span>git commit <span class="s2">"Update"</span>
+<span class="nv">$ </span>git push origin master
+</code></pre></div></div>
+
+<!-- ## GitHub Pages
+To deploy to GitHub Pages, the steps are:
+
+~~~bash
+$ cd _site
+$ git init # you only need to do this once
+$ git remote add origin <github_remote_url> # you only need to do this once
+$ git add .
+$ git commit -m "Build"
+$ git push origin master:<remote_branch>
+$ cd ..
+~~~
+
+`github_remote_url`
+: Find this on your repository's GitHub page.
+
+`remote_branch`
+: Either `master` for "user or organization pages", or `gh-pages` for "project pages"
+
+More on [user, organization, and project pages](https://help.github.com/articles/user-organization-and-project-pages/). -->
+
+<!-- Continue with [Advanced](/docs/advanced.html){:.heading.flip-title}
+{:.read-more} -->
+
 
 </article>
 
