@@ -1,7 +1,8 @@
 {% assign post = include.post %}
 {% assign format = include.format | default:site.data.strings.date_formats.related_post | default:"%d %b %Y" %}
+{% assign hide_image       = include.hide_image       %}
 
 <li class="h4">
-  <a href="{{ post.url | relative_url }}" class="flip-title"><span>{{ post.title }}</span></a>
+  <a href="{{ post.url | relative_url }}" class="flip-title"><img src="{{hide_image}}" alt=""><span>{{ post.title }}</span></a>
   <time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
 </li>
