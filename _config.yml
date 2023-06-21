@@ -91,7 +91,9 @@ menu:
   - title:             공부
     submenu:
       - title:          JavaScript
-      - url:            /javascript/
+        url:            /javascript/
+      - title:          React
+        url:            /react/
   - title:             Error
     url:               /error/
   #- title:             About

@@ -6,6 +6,7 @@
       {% if node.submenu %}
       <li>
         {% for submenu in node.submenu %}
+        {{submenu}}
           {% assign suburl = submenu.url%}
         <ul>
           <li>
