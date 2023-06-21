@@ -3,6 +3,7 @@
   {% if site.menu %}
     {{site}}
     {% for node in site.menu %}
+    {{node}}
       {% assign url = node.url | default: node.href %}
       <li>
         <a
