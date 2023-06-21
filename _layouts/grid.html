@@ -25,7 +25,7 @@ layout: page
 {% assign grid_group_by = date_formats.grid_group_by | default:"%Y" %}
 {% assign grid_entry = date_formats.grid_entry | default:"%d %b" %}
 {{page.url}}
-{{posts}}
+
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
     {% for post in posts %}
