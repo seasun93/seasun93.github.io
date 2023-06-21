@@ -1,5 +1,5 @@
 ---
-# Copyright (c) 2018 Florian Klampfer <https://qwtel.com />
+# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -8,11 +8,11 @@
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program. If not, see<http://www.gnu.org/licenses />.
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 layout: page
 ---
@@ -21,20 +21,20 @@ layout: page
 
 {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
 
-{% assign date_formats = site.data.strings.date_formats %}
-{% assign grid_group_by = date_formats.grid_group_by | default:"%Y" %}
-{% assign grid_entry = date_formats.grid_entry | default:"%d %b" %}
+{% assign date_formats  = site.data.strings.date_formats               %}
+{% assign grid_group_by = date_formats.grid_group_by | default:"%Y"    %}
+{% assign grid_entry    = date_formats.grid_entry    | default:"%d %b" %}
 
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
 {% for post in posts %}
-    {% assign current_date = post.date | date:grid_group_by %}
-    {% unless page.no_groups %}{% if current_date != prev_date %}
-        {% unless forloop.first %}</ul>{% endunless %}
-        <h2 id="{{ grid_group_by | slugify }}-{{ current_date | slugify }}" class="hr-bottom">{{ current_date }}</h2>
-        <ul class="related-posts">
-        {% assign prev_date = current_date %}
-    {% endif %}{% endunless %}
-    {% include_cached components/post-grid-item.html post=post format=grid_entry %}
-    {% if forloop.last %}</ul>{% endif %}
+  {% assign current_date = post.date | date:grid_group_by %}
+  {% unless page.no_groups %}{% if current_date != prev_date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="{{ grid_group_by | slugify }}-{{ current_date | slugify }}" class="hr-bottom">{{ current_date }}</h2>
+    <ul class="related-posts">
+    {% assign prev_date = current_date %}
+  {% endif %}{% endunless %}
+  {% include_cached components/post-list-item.html post=post format=grid_entry %}
+  {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
