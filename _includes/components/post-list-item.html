@@ -3,6 +3,6 @@
 {% assign hide_image       = include.hide_image       %}
 
 <li class="h4">
-  <a href="{{ post.url | relative_url }}" class="flip-title">{% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}<span>{{ post.title }}</span></a>
+  <a href="{{ post.url | relative_url }}" class="flip-title">{% include_cached components/hy-img.html img=post.image alt=post.title %}<span>{{ post.title }}</span></a>
   <time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
 </li>
