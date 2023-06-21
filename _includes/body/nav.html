@@ -5,10 +5,11 @@
       {% assign url = node.url | default: node.href %}
       {% if node.submenu %}
       <li>
-        {% for submenu in node.submenu %}
-        {{submenu}}
-          {% assign suburl = submenu.url%}
+        {{node.submenu}}
+        <h2>{{node.title}}</h2>
         <ul>
+          {% for submenu in node.submenu %}
+          {% assign suburl = submenu.url%}
           <li>
             <a
             {% if forloop.first %}id="_drawer--opened"{% endif %}
