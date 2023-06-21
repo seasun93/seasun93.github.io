@@ -88,13 +88,21 @@ plugins:
   - jekyll-last-modified-at
 
 menu:
-  - title:             공부
+  - title:             About
+    url:               /about/
+  - title:             Study
     submenu:
       - title:          JavaScript
         url:            /javascript/
       - title:          React
         url:            /react/
+      - title:          Github
+        url:            /github/
   - title:             Error
-    url:               /error/
-  #- title:             About
-  #  url:               /about/
+    submenu:
+      -title:           Javascript
+        url:            /err-javascript/
+      -title:           React
+        url:            /err-react/
+      -title:           Github
+        url:            /err-github/
