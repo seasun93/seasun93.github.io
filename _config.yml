@@ -100,9 +100,9 @@ menu:
         url:            /github/
   - title:             Error
     submenu:
-      -title:           Javascript
+      - title:           Javascript
         url:            /err-javascript/
-      -title:           React
+      - title:           React
         url:            /err-react/
-      -title:           Github
+      - title:           Github
         url:            /err-github/
