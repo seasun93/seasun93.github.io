@@ -1,16 +1,16 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).
-layout: list
+layout: grid
 
 # The title of the tag's page.
-title: Study
+title: Github
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: study
+slug: err-github
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  작업중 발생하는 궁금증 정리페이지입니다.
+  깃허브 에러 정리페이지입니다.
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
