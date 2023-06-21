@@ -24,9 +24,7 @@ layout: page
 {% assign date_formats = site.data.strings.date_formats %}
 {% assign grid_group_by = date_formats.grid_group_by | default:"%Y" %}
 {% assign grid_entry = date_formats.grid_entry | default:"%d %b" %}
-{{site.layout}}
-{{posts}}
-{{date_formats}}
+
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
     {% for post in posts %}
