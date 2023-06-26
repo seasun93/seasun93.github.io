@@ -3,7 +3,7 @@
 layout: grid
 
 # The title of the tag's page.
-title: Javascript
+title: Javascript 에러 모음
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: err-javascript
