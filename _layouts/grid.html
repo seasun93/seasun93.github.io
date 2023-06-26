@@ -20,7 +20,7 @@ layout: page
 {{ content }}
 
 {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
-
+{{page.slug}}
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign grid_group_by = date_formats.grid_group_by | default:"%Y"    %}
 {% assign grid_entry    = date_formats.grid_entry    | default:"%d %b" %}
@@ -35,6 +35,6 @@ layout: page
     <ul class="related-posts">
     {% assign prev_date = current_date %}
   {% endif %}{% endunless %}
-  {% include_cached components/post-list-item.html post=post format=grid_entry %}
+  {% include_cached components/post--item.html post=post format=grid_entry %}
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
