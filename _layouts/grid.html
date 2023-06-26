@@ -21,10 +21,12 @@ layout: page
 
 {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
 {{page.slug}}
+
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign grid_group_by = date_formats.grid_group_by | default:"%Y"    %}
 {% assign grid_entry    = date_formats.grid_entry    | default:"%d %b" %}
-
+{{grid_group_by}}
+{{grid_entry}}
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
 {% for post in posts %}
