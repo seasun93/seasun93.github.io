@@ -14,9 +14,9 @@ function depsList(){
             if(this.classList.contains('on')){
                 removeAll()
             } else {
-                deps[i].classList.remove('on');
+                deps[i].classList.add('on');
                 deps[i].style.height = `${depsHeight[i]}px`;
-                depsTitle[i].classList.remove('on');
+                depsTitle[i].classList.add('on');
             }
         })
     })
