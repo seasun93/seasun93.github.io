@@ -28,7 +28,7 @@ layout: page
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<ul class="related-posts">{% endif %}
 {% for post in posts %}
-  {{post}}
+  {{posts}}
   {% assign current_date = post.date | date:grid_group_by %}
   {% unless post %}<li>내용 준비중입니다</li>{% else %}
   {% include_cached components/post-grid-item.html post=post format=grid_entry %}{% endunless %}
