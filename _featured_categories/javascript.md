@@ -1,6 +1,6 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).
-layout: list
+layout: grid
 
 # The title of the tag's page.
 title: Javascript
@@ -13,7 +13,7 @@ description: >
   자바스크립트 이론 정리페이지입니다.
 
 # (Optional) You can disable grouping posts by date.
-# no_groups: true
+no_groups: true
 
 # Exclude this example category from the sitemap.
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
