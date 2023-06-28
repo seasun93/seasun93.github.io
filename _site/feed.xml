@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2023-06-26T11:37:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">시선</title><entry><title type="html">에러자바스크립트테스트</title><link href="http://localhost:4000/err-javascript/2023/06/26/test.html" rel="alternate" type="text/html" title="에러자바스크립트테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-26T11:28:26+09:00</updated><id>http://localhost:4000/err-javascript/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/err-javascript/2023/06/26/test.html"><![CDATA[<p>테스트 작업 자바스크립트 에러</p>]]></content><author><name></name></author><category term="err-javascript" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">리액트 테스트</title><link href="http://localhost:4000/react/2023/06/26/test.html" rel="alternate" type="text/html" title="리액트 테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-26T10:21:28+09:00</updated><id>http://localhost:4000/react/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/react/2023/06/26/test.html"><![CDATA[<p>테스트 작업 리액트</p>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">깃허브 테스트</title><link href="http://localhost:4000/github/2023/06/26/test.html" rel="alternate" type="text/html" title="깃허브 테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-26T10:21:45+09:00</updated><id>http://localhost:4000/github/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/github/2023/06/26/test.html"><![CDATA[<p>테스트 작업 깃허브</p>]]></content><author><name></name></author><category term="github" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">에러리액트테스트</title><link href="http://localhost:4000/err-react/2023/06/18/test.html" rel="alternate" type="text/html" title="에러리액트테스트" /><published>2023-06-18T00:00:00+09:00</published><updated>2023-06-21T23:06:21+09:00</updated><id>http://localhost:4000/err-react/2023/06/18/test</id><content type="html" xml:base="http://localhost:4000/err-react/2023/06/18/test.html"><![CDATA[<p>테스트 작업</p>]]></content><author><name></name></author><category term="err-react" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">에러깃허브테스트</title><link href="http://localhost:4000/err-github/2023/06/18/test.html" rel="alternate" type="text/html" title="에러깃허브테스트" /><published>2023-06-18T00:00:00+09:00</published><updated>2023-06-21T23:06:40+09:00</updated><id>http://localhost:4000/err-github/2023/06/18/test</id><content type="html" xml:base="http://localhost:4000/err-github/2023/06/18/test.html"><![CDATA[<p>테스트 작업</p>]]></content><author><name></name></author><category term="err-github" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2020/07/03/introducing-hydejack-9.html" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2023-06-18T02:03:11+09:00</updated><id>http://localhost:4000/example/2020/07/03/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/example/2020/07/03/introducing-hydejack-9.html"><![CDATA[<p class="lead">손용수 고마워
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2023-06-28T11:28:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">시선</title><entry><title type="html">깃허브 리스트 테스트</title><link href="http://localhost:4000/err-github/2023/06/28/eGithub1.html" rel="alternate" type="text/html" title="깃허브 리스트 테스트" /><published>2023-06-28T00:00:00+09:00</published><updated>2023-06-28T11:28:00+09:00</updated><id>http://localhost:4000/err-github/2023/06/28/eGithub1</id><content type="html" xml:base="http://localhost:4000/err-github/2023/06/28/eGithub1.html"><![CDATA[<p>깃허브 글 등록이 제대로 되는지 확인과정에 있습니다.</p>]]></content><author><name></name></author><category term="err-github" /><summary type="html"><![CDATA[게시글 등록확인절차]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/github-title-1.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/github-title-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">깃허브 시작하기</title><link href="http://localhost:4000/github/2023/06/28/github1.html" rel="alternate" type="text/html" title="깃허브 시작하기" /><published>2023-06-28T00:00:00+09:00</published><updated>2023-06-28T11:28:05+09:00</updated><id>http://localhost:4000/github/2023/06/28/github1</id><content type="html" xml:base="http://localhost:4000/github/2023/06/28/github1.html"><![CDATA[<ul class="large-only" id="markdown-toc">
+  <li><a href="#깃허브-시작하기" id="markdown-toc-깃허브-시작하기">깃허브 시작하기</a></li>
+  <li><a href="#repository와-폴더-연결하기" id="markdown-toc-repository와-폴더-연결하기">Repository와 폴더 연결하기</a></li>
+  <li><a href="#git의-기본적인-명령어" id="markdown-toc-git의-기본적인-명령어">Git의 기본적인 명령어</a></li>
+</ul>
+
+<p><span style="background:#ffa9a966">★★★깃허브 시작 전, git 설치★★★</span><br />
+<span>이 작업은 vscode로 작업을 진행했습니다.</span></p>
+
+<h2 id="깃허브-시작하기">깃허브 시작하기</h2>
+<p>회원가입을 진행한 후, repositories의 new 클릭<br />
+<img src="/assets/img/blog/repositories-1.png" alt="repositories-1" /><br />
+<span style="color:red; font-weight:600">Repository name</span>에 이미지처럼 작성한 후 Public, README 체크확인
+<img src="/assets/img/blog/repositories-2.png" alt="repositories-2" /><br />
+마지막으로 Create repository 클릭</p>
+
+<h2 id="repository와-폴더-연결하기">Repository와 폴더 연결하기</h2>
+<ol>
+  <li>본인이 작업할 폴더를 생성 한 후 vscode에 폴더연결을 하고 터미널을 켜준다.</li>
+  <li>깃허브에 Repository를 클릭해 접속 한 후 <span style="background:darkgreen; color:#fff;">Code</span> 클릭 후 HTTPS의 주소를 복사를 해준다
+<img src="/assets/img/blog/github-connect-2.png" alt="github-connect-2" /><br /></li>
+  <li>터미널에서 <code class="language-plaintext highlighter-rouge">$ git init</code>과 <code class="language-plaintext highlighter-rouge">git remote add origin '저장소 주소(code의 https)'</code>를 작성해준다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git init
+<span class="nv">$ </span>git remote add origin <span class="s1">'저장소 주소(code의 https)'</span>
+</code></pre></div></div>
+
+<h2 id="git의-기본적인-명령어">Git의 기본적인 명령어</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">$ git add</code> : 스테이지에 추가
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ git add &lt;파일/디렉토리&gt;</code> : 입력한 파일/디렉토리 경로만 스테이지에 추가</li>
+      <li><code class="language-plaintext highlighter-rouge">$ git add -A</code> : 작업 디렉토리 안의 모든 변경 내용을 스테이지에 추가</li>
+      <li><code class="language-plaintext highlighter-rouge">$ git add .</code> : 현재 디렉토리 안의 모든 변경 내용을 스테이지에 추가. 최상위 디렉토리에서 git add . 실행 시 git add -A과 같은 효과</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">$ git commit</code> : 작업/수정 된 add시킨 파일/디렉토리를 하나의 묶음으로 정의
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">$ git commit -m '커밋메세지'</code> : 커밋 할 메세지를 등록</li>
+      <li><code class="language-plaintext highlighter-rouge">$ git commit -am '커밋메세지'</code> : add + commit 동시 작성
+        <blockquote>
+          <p>문서 작업 후 file-save를 통해 파일명.hwp을 저장하는데 파일명이 커밋메세지인 셈이다</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">$ git push</code> : stage에 올라온 작업/수정 파일을 Repository에 업로드</li>
+</ul>
+
+<p><img src="/assets/img/blog/github-command.png" alt="github-command" /></p>]]></content><author><name></name></author><category term="github" /><summary type="html"><![CDATA[깃허브 시작과 기초 명령어 정리]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/github-title-1.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/github-title-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">에러자바스크립트테스트</title><link href="http://localhost:4000/err-javascript/2023/06/26/test.html" rel="alternate" type="text/html" title="에러자바스크립트테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/err-javascript/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/err-javascript/2023/06/26/test.html"><![CDATA[<p>테스트 작업 자바스크립트 에러</p>]]></content><author><name></name></author><category term="err-javascript" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">리액트 테스트</title><link href="http://localhost:4000/react/2023/06/26/test.html" rel="alternate" type="text/html" title="리액트 테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/react/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/react/2023/06/26/test.html"><![CDATA[<p>테스트 작업 리액트</p>]]></content><author><name></name></author><category term="react" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">깃허브 테스트</title><link href="http://localhost:4000/github/2023/06/26/test.html" rel="alternate" type="text/html" title="깃허브 테스트" /><published>2023-06-26T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/github/2023/06/26/test</id><content type="html" xml:base="http://localhost:4000/github/2023/06/26/test.html"><![CDATA[<p>테스트 작업 깃허브</p>]]></content><author><name></name></author><category term="github" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">에러리액트테스트</title><link href="http://localhost:4000/err-react/2023/06/18/test.html" rel="alternate" type="text/html" title="에러리액트테스트" /><published>2023-06-18T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/err-react/2023/06/18/test</id><content type="html" xml:base="http://localhost:4000/err-react/2023/06/18/test.html"><![CDATA[<p>테스트 작업</p>]]></content><author><name></name></author><category term="err-react" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">에러깃허브테스트</title><link href="http://localhost:4000/err-github/2023/06/18/test.html" rel="alternate" type="text/html" title="에러깃허브테스트" /><published>2023-06-18T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/err-github/2023/06/18/test</id><content type="html" xml:base="http://localhost:4000/err-github/2023/06/18/test.html"><![CDATA[<p>테스트 작업</p>]]></content><author><name></name></author><category term="err-github" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2020/07/03/introducing-hydejack-9.html" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/example/2020/07/03/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/example/2020/07/03/introducing-hydejack-9.html"><![CDATA[<p class="lead">손용수 고마워
 Version 9 is the most complete version of Hydejack yet.</p>
 
 <p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
@@ -88,7 +139,7 @@ The source code is available on <a href="https://github.com/hydecorp/hydejack">G
   If you’re technically inclined, you can adopt the code located in <code class="language-plaintext highlighter-rouge">_includes/js/search-worker.js</code> to your needs. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/example/2018/06/01/example-content-iii.html" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+09:00</published><updated>2022-02-07T13:43:00+09:00</updated><id>http://localhost:4000/example/2018/06/01/example-content-iii</id><content type="html" xml:base="http://localhost:4000/example/2018/06/01/example-content-iii.html"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
+</div>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/example/2018/06/01/example-content-iii.html" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/example/2018/06/01/example-content-iii</id><content type="html" xml:base="http://localhost:4000/example/2018/06/01/example-content-iii.html"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
 Don’t worry, these are merely CSS classes added with kramdown’s <code class="language-plaintext highlighter-rouge">{:...}</code> syntax,
 so that your content remains compatible with other Jekyll themes.</p>
 
@@ -278,7 +329,7 @@ A caption to an image.</p>
 </blockquote>
 
 <h2 id="faded-text">Faded text</h2>
-<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/example/2017/11/23/example-content-ii.html" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+09:00</published><updated>2022-02-07T13:43:00+09:00</updated><id>http://localhost:4000/example/2017/11/23/example-content-ii</id><content type="html" xml:base="http://localhost:4000/example/2017/11/23/example-content-ii.html"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/example/2017/11/23/example-content-ii.html" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+09:00</published><updated>2023-06-28T11:25:09+09:00</updated><id>http://localhost:4000/example/2017/11/23/example-content-ii</id><content type="html" xml:base="http://localhost:4000/example/2017/11/23/example-content-ii.html"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
 
 <p>There should be whitespace between paragraphs.</p>
 
@@ -461,136 +512,4 @@ A caption to an image.</p>
 </code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/example/2012/02/07/example-content.html" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+09:00</published><updated>2022-02-07T13:43:00+09:00</updated><id>http://localhost:4000/example/2012/02/07/example-content</id><content type="html" xml:base="http://localhost:4000/example/2012/02/07/example-content.html"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<h2 id="inline-html-elements">Inline <abbr title="HyperText Markup Language">HTML</abbr> elements</h2>
-
-<p><abbr title="HyperText Markup Language">HTML</abbr> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-
-<ul>
-  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">**To bold text**</code>.</li>
-  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">*To italicize text*</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="language-plaintext highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-</ul>
-
-<p>Most of these elements are styled by browsers with few modifications on our part.</p>
-
-<h2 id="heading-2">Heading 2</h2>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-<h3 id="heading-3">Heading 3</h3>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h4 id="heading-4">Heading 4</h4>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h5 id="heading-5">Heading 5</h5>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h6 id="heading-6">Heading 6</h6>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h2 id="code">Code</h2>
-
-<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
-<span class="c1">// arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
-
-<span class="c1">// Call the function</span>
-<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span>
-</code></pre></div></div>
-
-<h2 id="lists">Lists</h2>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-  <li>Donec id elit non mi porta gravida at eget metus.</li>
-  <li>Nulla vitae elit libero, a pharetra augue.</li>
-</ul>
-
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-
-<ol>
-  <li>Vestibulum id ligula porta felis euismod semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-</ol>
-
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-
-<dl>
-  <dt>HyperText Markup Language (<abbr title="HyperText Markup Language">HTML</abbr>)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
-  <dt>Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-  <dt>JavaScript (<abbr title="JavaScript">JS</abbr>)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<h2 id="images">Images</h2>
-
-<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
-
-<p><img src="https://via.placeholder.com/800x400" alt="800x400" title="Large example image" /></p>
-
-<p><img src="https://via.placeholder.com/400x200" alt="400x200" title="Medium example image" /></p>
-
-<p><img src="https://via.placeholder.com/200x200" alt="200x200" title="Small example image" /></p>
-
-<h2 id="tables">Tables</h2>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Name</th>
-      <th style="text-align: left">Upvotes</th>
-      <th style="text-align: left">Downvotes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Alice</td>
-      <td style="text-align: left">10</td>
-      <td style="text-align: left">11</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Bob</td>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Charlie</td>
-      <td style="text-align: left">7</td>
-      <td style="text-align: left">9</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td style="text-align: left">Totals</td>
-      <td style="text-align: left">21</td>
-      <td style="text-align: left">23</td>
-    </tr>
-  </tfoot>
-</table>
-
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[Howdy! This is an example blog post that shows several types of HTML content supported in this theme.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name></name></author><category term="example" /><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,9 +1,77 @@
+// menu css
+.sidebar-bg {
+    background-color: #fff
+}
+.sidebar-about{
+    > a.sidebar-title {
+        color: #333;
+    }
+    > a.sidebar-title::after {
+        display: none;
+    }
+}
+.sidebar-sticky {
+    min-width: 12rem;
+}
+.sidebar-nav {
+    h2 {
+        margin:0
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.sidebar-nav > ul > li {
+    >a.sidebar-nav-item {
+        color:#333;
+        text-decoration: none;
+    }
+    .deps{
+        padding: 0;
+        overflow: hidden;
+        display:flex;
+        flex-flow:column;
+        transition: all 0.5s ease-out;
+    }
+
+    .deps li .sidebar-nav-item {
+        color:#555;
+        border: 0;
+        text-decoration: none;
+    }
+
+    .deps-title {
+        position: relative;
+        color:#333;
+
+        &::after{
+            content:'';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top:6px solid #555;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            position: absolute;
+            right: 0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    .deps-title.on::after{
+        transform: translateY(-50%) scaleY(-1);
+    }
+}
+
+// grid css
 .layout-grid .related-posts {
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-}
-.layout-grid .related-posts li {
-    width: 33%;
-    margin-right : 1rem;
+
+    li {
+        width: 33%;
+        margin-right : 1rem;
+    }
 }
