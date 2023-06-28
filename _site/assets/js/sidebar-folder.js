@@ -8,7 +8,6 @@ function depsList(){
 
     deps.forEach(function(el){
         depsHeight.push(el.scrollHeight);
-        removeAll();
     })
     depsTitle.forEach(function(el,i){
         el.addEventListener('click',function(){
