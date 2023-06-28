@@ -28,9 +28,9 @@
     max-width: $content-width;
   }
 
-  @media screen and (min-width: $break-point-2) {
-    max-width: $content-width-2;
-  }
+  // @media screen and (min-width: $break-point-2) {
+  //   max-width: $content-width-2;
+  // }
 
   @media screen and (min-width: $break-point-3) {
     padding-left: $content-padding;
