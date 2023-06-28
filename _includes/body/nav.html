@@ -5,8 +5,8 @@
       {% assign url = node.url | default: node.href %}
       {% if node.submenu %}
       <li>
-        <h2>{{node.title}}</h2>
-        <ul>
+        <h2 class="deps-title">{{node.title}}</h2>
+        <ul class="deps">
           {% for submenu in node.submenu %}
           {% assign suburl = submenu.url%}
           <li>

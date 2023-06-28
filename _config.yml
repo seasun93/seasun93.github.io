@@ -70,20 +70,20 @@ menu:
     url:               /about/
   - title:             Study
     submenu:
-      - title:         JavaScript
-        url:           /javascript/
-      - title:         React
-        url:           /react/
+      # - title:         JavaScript
+      #   url:           /javascript/
+      # - title:         React
+      #   url:           /react/
       - title:         Github
         url:           /github/
-  - title:             Error
-    submenu:
-      - title:         Javascript
-        url:           /err-javascript/
-      - title:         React
-        url:           /err-react/
-      - title:         Github
-        url:           /err-github/
+  # - title:             Error
+  #   submenu:
+  #     - title:         Javascript
+  #       url:           /err-javascript/
+  #     - title:         React
+  #       url:           /err-react/
+  #     - title:         Github
+  #       url:           /err-github/
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2023. All rights reserved.
