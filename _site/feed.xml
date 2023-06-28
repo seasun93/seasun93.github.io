@@ -1,4 +1,270 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2023-06-28T17:14:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">시선</title><entry><title type="html">깃허브 시작하기</title><link href="http://localhost:4000/github/2023/06/28/github1.html" rel="alternate" type="text/html" title="깃허브 시작하기" /><published>2023-06-28T00:00:00+09:00</published><updated>2023-06-28T12:35:18+09:00</updated><id>http://localhost:4000/github/2023/06/28/github1</id><content type="html" xml:base="http://localhost:4000/github/2023/06/28/github1.html"><![CDATA[<ul class="large-only" id="markdown-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ko"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="ko" /><updated>2023-06-29T03:06:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">시선</title><entry><title type="html">3. NextJS 시작하기</title><link href="http://localhost:4000/next/2023-06-29-next3/" rel="alternate" type="text/html" title="3. NextJS 시작하기" /><published>2023-06-29T00:00:00+09:00</published><updated>2023-06-29T03:06:44+09:00</updated><id>http://localhost:4000/next/next3</id><content type="html" xml:base="http://localhost:4000/next/2023-06-29-next3/"><![CDATA[<ul class="large-only" id="markdown-toc">
+  <li><a href="#리액트-구조-알기" id="markdown-toc-리액트-구조-알기">리액트 구조 알기</a></li>
+  <li><a href="#jsx" id="markdown-toc-jsx">JSX?</a>    <ul>
+      <li><a href="#return" id="markdown-toc-return">return(   )</a></li>
+      <li><a href="#class와-classname" id="markdown-toc-class와-classname">class와 className</a></li>
+      <li><a href="#html-속-변수" id="markdown-toc-html-속-변수">HTML 속, 변수</a></li>
+      <li><a href="#style-속성" id="markdown-toc-style-속성">style 속성</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="리액트-구조-알기">리액트 구조 알기</h2>
+<p>기존 파일에 존재하던 모든 css와 page.js의 불필요한 요소들을 모두 지우고 아래 코드처럼 깔끔하게 만들어 프로젝트를 시작할 수 있게 준비한다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return </span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="jsx">JSX?</h2>
+<p>JSX는 리액트에서 사용하는 HTML 문법을 말하며 JSX는 크게 4가지 특징이 존재한다.</p>
+
+<h3 id="return">return(   )</h3>
+<p>return 안에는 반드시 하나의 HTML 태그로 시작해서 끝이 나야만 한다.<br />
+[o] 1번 예시</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">올바른</span> <span class="nx">작성</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>[x] 2번 예시</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">첫번째</span> <span class="nx">div</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">두번째</span> <span class="nx">div</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>만약 2번 예시 처럼 여러 div를 사용하고 싶은 경우, 모든 div를 감싸는 최상위 div를 생성해준다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">첫번째</span> <span class="nx">div</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">h2</span><span class="o">&gt;</span><span class="nx">두번째</span> <span class="nx">div</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h3 id="class와-classname">class와 className</h3>
+<p>클래스를 사용하려면 class가 아니라 className으로 작성해야한다. 그 이유는 javascript파일에서 작성하기 때문에 javascript의 class문법과 중복이기 때문이다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">올바른</span> <span class="nx">작성</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h3 id="html-속-변수">HTML 속, 변수</h3>
+<p>변수는 export와 return 사이에 공간을 만들어서 작성을 하게됩니다.
+작성한 변수는 HTML 내에 중괄호를 넣고 그 안에 변수명을 넣어주면 끝이 납니다. 이를 데이터 바인딩 문법이라 합니다.</p>
+
+<p>변수는 태그 뿐만아니라 태그의 속성에도 넣어 줄 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">title</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">코드</span><span class="dl">'</span>
+    <span class="kd">let</span> <span class="nx">colorPink</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">pink</span><span class="dl">'</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">colorPink</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">올바른</span> <span class="p">{</span><span class="nx">title</span><span class="p">}</span> <span class="nx">작성</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h3 id="style-속성">style 속성</h3>
+<p>className을 이용한 css 변경이 아니라 태그에 인라인속성으로 style을 넣을 때는 객체 입력하듯이 중괄호 안에 중괄호를 넣고 그안에 css를 넣어줘야 한다. 또한 -(대쉬)을 작성할 수 없으므로 카멜표기법을 이용해야한다.</p>
+
+<p>여러개의 style 속성을 넣으려면 ,(콤마)를 이용하면 여러개의 style을 넣을 수 있다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">Home</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return </span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">title</span><span class="dl">"</span> <span class="nx">style</span><span class="o">=&gt;</span><span class="nx">올바른</span> <span class="nx">작성</span><span class="o">&lt;</span><span class="sr">/h2</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="next" /><summary type="html"><![CDATA[JSX의 특징과 구조 알기]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/next-title-3.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/next-title-3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">2. NextJS 작업 환경 셋팅하기</title><link href="http://localhost:4000/next/2023-06-29-next2/" rel="alternate" type="text/html" title="2. NextJS 작업 환경 셋팅하기" /><published>2023-06-29T00:00:00+09:00</published><updated>2023-06-29T02:09:16+09:00</updated><id>http://localhost:4000/next/next2</id><content type="html" xml:base="http://localhost:4000/next/2023-06-29-next2/"><![CDATA[<ul class="large-only" id="markdown-toc">
+  <li><a href="#nextjs-생성전-필수-설치" id="markdown-toc-nextjs-생성전-필수-설치">Next.js 생성전 <strong>필수</strong> 설치</a></li>
+  <li><a href="#nextjs-프로젝트-생성하기" id="markdown-toc-nextjs-프로젝트-생성하기">Next.js 프로젝트 생성하기</a></li>
+  <li><a href="#작업위치" id="markdown-toc-작업위치">작업위치</a></li>
+</ul>
+
+<h2 id="nextjs-생성전-필수-설치">Next.js 생성전 <strong>필수</strong> 설치</h2>
+<p>node.js 설치하기 : (<a href="https://nodejs.org/en">https://nodejs.org/en</a>)<br />
+vscode 설치하기 : (<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)</p>
+
+<h2 id="nextjs-프로젝트-생성하기">Next.js 프로젝트 생성하기</h2>
+
+<ol>
+  <li>local 환경에 react 작업할 폴더하나를 생성합니다.</li>
+  <li>vscode를 켜고 생성한 폴더를 연결합니다. [ File - Open Folder… ]</li>
+  <li>터미널[ ctrl + shift + ` ]을 켜줍니다.</li>
+  <li>터미널에 <code class="language-plaintext highlighter-rouge">npx create-next-app@latest</code>를 입력해준 뒤 하단 코드를 참고하여 설치를 진행해준다.</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx create-next-app@latest <span class="nt">--experimental-app</span>
+Need to <span class="nb">install </span>the  following packages :
+  create-next-app@13.4.7
+Ok to proceed? <span class="o">(</span>y<span class="o">)</span> y
+? What is your project named? 앱이름작성
+? Would you like to use TypeScript with this project? No / Yes - 방향키로 No/Yes 선택<span class="o">(</span>활성화 시 파란색으로 변경 됨<span class="o">)</span>
+? Would you like to use ESLint with this project? No / Yes
+? Would you like to use Tailwind CSS with this project? No / Yes
+? Would you like to use <span class="s1">'src/'</span> directory with this project? No / Yes
+? Would you like to customize the default import <span class="nb">alias</span>? No / Yes
+? Use App Router <span class="o">(</span>recommended<span class="o">)</span>? No / Yes - 무조건 Yes
+
+</code></pre></div></div>
+<ol>
+  <li>생성한 폴더에 Next app 폴더가 생성이 되었는데 이 폴더를 다시 [ File - Open Folder… ]로 열어준다</li>
+</ol>
+
+<h2 id="작업위치">작업위치</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>파일/폴더명</th>
+      <th>내용</th>
+      <th>비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page.js</td>
+      <td>메인페이지</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>layout.js</td>
+      <td>page.js를 감싸는 파일</td>
+      <td>페이지에 들어가는 공통요소가 들어감</td>
+    </tr>
+    <tr>
+      <td>globals.css</td>
+      <td>모든페이지에 적용할 CSS</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>xxx.module.css</td>
+      <td>특정페이지에 적용할 CSS</td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>api</td>
+      <td>서버기능 만드는 곳</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>node_modules</td>
+      <td>구동에필요한 모든 라이브러리 파일 보관</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>이미지같은 소스코드 외의 파일 보관폴더</td>
+      <td> </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>package.json</td>
+      <td>구동에 필요한 라이브러리 버전/터미널에서 쓸 수 있는 명령어들을 기록</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/img/blog/next-2-start.png" alt="next-2-start" /></p>]]></content><author><name></name></author><category term="next" /><summary type="html"><![CDATA[Next JS 작업 환경 세팅 및 시작하기]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/next-title-2.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/next-title-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">1. CSR과 SSR의 차이</title><link href="http://localhost:4000/next/2023-06-29-next1/" rel="alternate" type="text/html" title="1. CSR과 SSR의 차이" /><published>2023-06-29T00:00:00+09:00</published><updated>2023-06-29T01:21:02+09:00</updated><id>http://localhost:4000/next/next1</id><content type="html" xml:base="http://localhost:4000/next/2023-06-29-next1/"><![CDATA[<ul class="large-only" id="markdown-toc">
+  <li><a href="#rendering" id="markdown-toc-rendering">Rendering?</a></li>
+  <li><a href="#csr" id="markdown-toc-csr">CSR</a></li>
+  <li><a href="#ssr" id="markdown-toc-ssr">SSR</a></li>
+  <li><a href="#csr과-ssr-차이-한눈에-보기" id="markdown-toc-csr과-ssr-차이-한눈에-보기">CSR과 SSR 차이 한눈에 보기</a></li>
+  <li><a href="#seo" id="markdown-toc-seo">SEO?</a></li>
+</ul>
+
+<h2 id="rendering">Rendering?</h2>
+<p>렌더링이란 HTML의 코드를 웹브라우저상에서 보여주는 행위를 말하며 CSR은 Client-Side Rendering이라 하여 client에서 브라우저로 코드를 보내 브라우저에서 작업을 진행하고, SSR은 Sever-Side Rendering이라 하여 서버에서 코드를 작업하여 브라우저로 보내는 특징이 있다.</p>
+
+<h2 id="csr">CSR</h2>
+<p>Client Side Rendering의 약자로, 웹 최초 접속 시 렌더링에 필요한 모든 HTML을 서버로부터 코드를 받은 후 Client의 조건에 따라 javascript코드를 통해 생성/변경/삭제가 가능한 가변적인 특징을 갖고 있고 이런 특징들로 인해 인터랙티브한 페이지를 제작한다.</p>
+
+<p>CSR은 단 한 번만 서버에서 코드를 받기 때문에 서버가 받는 부담이 적은 게 장점이지만 단점으로는 검색 엔진 최적화에는 적합하지 못하다. 그 이유는 검색엔진봇이 크롤링을 할 때 JS가 실행되지 않는 미완성 HTML 코드만 들고 가기 때문이다.</p>
+
+<h2 id="ssr">SSR</h2>
+<p>Server Side Rendering의 약자로 CSR과 다르게 렌더링이 필요할 때마다 서버로부터 정해진 HTML 코드를 받아오기 때문에 인터랙티브한 페이지를 제작할 수 없다. 그 때문에 SSR은 템플릿 엔진에서 많이 사용된다.</p>
+
+<p>CSR과 반대로 렌더링 할 때마다 서버에 요청을 하므로 서버에 부담이 크지만 요청할 때마다 다 짜인 HTML이 제공되기 때문에 검색엔진봇이 더 많은 정보를 가져가서 검색 엔진에 최적화 되어있는 게 장점이다.</p>
+
+<h2 id="csr과-ssr-차이-한눈에-보기">CSR과 SSR 차이 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Client Side Rendering</th>
+      <th>Server Side Rendering</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>언어</td>
+      <td>React, Vue</td>
+      <td>Next, PHP</td>
+    </tr>
+    <tr>
+      <td>장점</td>
+      <td>반응속도가 빨라 부드럽게 표현된다</td>
+      <td>초기 렌더링 속도가 빠르다<br />SEO에 유리하다</td>
+    </tr>
+    <tr>
+      <td>단점</td>
+      <td>초기 렌더링 속도가 느리다<br />SEO에 불리하다</td>
+      <td>반응속도가 느리다</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="seo">SEO?</h2>
+<p>Search Engine Optimization의 약자이며 검색 엔진 최적화라는 의미로 사이트 내 콘텐츠 정보를 검색엔진이 잘 이해하여 검색엔진에서의 검색 결과가 빠지지 않도록 조치할 수 있고 그로 인해 사이트에 방문자 수가 증가하는데 기여를 한다.
+이는 사이트에 광고를 달아 부수입 창출을 할 수 있게 된다.</p>]]></content><author><name></name></author><category term="next" /><summary type="html"><![CDATA[Next JS의 프레임워크 장단점]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/next-title-1.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/next-title-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">깃허브 시작하기</title><link href="http://localhost:4000/github/2023-06-28-github1/" rel="alternate" type="text/html" title="깃허브 시작하기" /><published>2023-06-28T00:00:00+09:00</published><updated>2023-06-28T12:35:18+09:00</updated><id>http://localhost:4000/github/github1</id><content type="html" xml:base="http://localhost:4000/github/2023-06-28-github1/"><![CDATA[<ul class="large-only" id="markdown-toc">
   <li><a href="#깃허브-시작하기" id="markdown-toc-깃허브-시작하기">깃허브 시작하기</a></li>
   <li><a href="#repository와-폴더-연결하기" id="markdown-toc-repository와-폴더-연결하기">Repository와 폴더 연결하기</a></li>
   <li><a href="#git의-기본적인-명령어" id="markdown-toc-git의-기본적인-명령어">Git의 기본적인 명령어</a></li>

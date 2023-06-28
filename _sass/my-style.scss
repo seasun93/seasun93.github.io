@@ -108,9 +108,8 @@
 
     @media screen and (min-width: $break-point-1) {
         li {
-            width: 49%;
-            margin:unset;
-            margin-right: 1%;
+            width: 47%;
+            margin:1.5% 3% 1.5% 0
         }
         li:nth-child(2n) {
             margin-right: unset;
@@ -119,8 +118,11 @@
 
     @media screen and (min-width: $break-point-5) {
         li {
-            width: 33%;
+            width: 30%;
         }
+        li:nth-child(2n) {
+            margin:1.5% 3% 1.5% 0
+        }        
         li:nth-child(3n) {
             margin-right: unset;
         }

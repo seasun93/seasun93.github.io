@@ -76,6 +76,8 @@ menu:
       #   url:           /react/
       - title:         Github
         url:           /github/
+      - title:         NextJS
+        url:           /next/
   # - title:             Error
   #   submenu:
   #     - title:         Javascript
