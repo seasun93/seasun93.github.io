@@ -74,13 +74,7 @@
     li {
         width: 90%;
         margin:1rem auto;
-
-        @media screen and (min-width: $break-point-1) {
-            width: 49%;
-        }
-        @media screen and (min-width: $break-point-5) {
-            width: 33%;
-        }
+        
         a {
             display:flex;
             flex-flow:column;
@@ -99,4 +93,25 @@
             }
         }
     }
+
+    @media screen and (min-width: $break-point-1) {
+        li {
+            width: 49%;
+            margin:unset;
+            margin-right: 1%;
+        }
+        li:nth-child(2n) {
+            margin-right: unset;
+        }
+    }
+
+    @media screen and (min-width: $break-point-5) {
+        li {
+            width: 33%;
+        }
+        li:nth-child(3n) {
+            margin-right: unset;
+        }
+    }
+
 }
