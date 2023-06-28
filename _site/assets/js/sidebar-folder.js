@@ -7,7 +7,8 @@ function depsList(){
     const depsTitle = document.querySelectorAll('.deps-title');
 
     deps.forEach(function(el){
-        depsHeight.push(el.scrollHeight)
+        depsHeight.push(el.scrollHeight);
+        deps.style.height = `0px`;
     })
     depsTitle.forEach(function(el,i){
         el.addEventListener('click',function(){
