@@ -31,23 +31,23 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   
     
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>CSR과 SSR의 차이 | 시선</title>
+<title>Route를 이용한 메뉴 만들기 | 시선</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="CSR과 SSR의 차이" />
+<meta property="og:title" content="Route를 이용한 메뉴 만들기" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="Next JS의 프레임워크 장단점" />
-<meta property="og:description" content="Next JS의 프레임워크 장단점" />
-<link rel="canonical" href="http://localhost:4000/next/2023-06-29-next1/" />
-<meta property="og:url" content="http://localhost:4000/next/2023-06-29-next1/" />
+<meta name="description" content="Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기." />
+<meta property="og:description" content="Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기." />
+<link rel="canonical" href="http://localhost:4000/next/2023-06-29-next4/" />
+<meta property="og:url" content="http://localhost:4000/next/2023-06-29-next4/" />
 <meta property="og:site_name" content="시선" />
-<meta property="og:image" content="http://localhost:4000/assets/img/blog/next-title-1.png" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/next-title-4.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-06-29T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/next-title-1.png" />
-<meta property="twitter:title" content="CSR과 SSR의 차이" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/next-title-4.png" />
+<meta property="twitter:title" content="Route를 이용한 메뉴 만들기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-29T01:21:02+09:00","datePublished":"2023-06-29T00:00:00+09:00","description":"Next JS의 프레임워크 장단점","headline":"CSR과 SSR의 차이","image":"http://localhost:4000/assets/img/blog/next-title-1.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/next/2023-06-29-next1/"},"url":"http://localhost:4000/next/2023-06-29-next1/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-29T12:22:10+09:00","datePublished":"2023-06-29T00:00:00+09:00","description":"Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기.","headline":"Route를 이용한 메뉴 만들기","image":"http://localhost:4000/assets/img/blog/next-title-4.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/next/2023-06-29-next4/"},"url":"http://localhost:4000/next/2023-06-29-next4/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -75,7 +75,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4000/next/2023-06-29-next1/" hreflang="ko">
+<link rel="alternate" href="http://localhost:4000/next/2023-06-29-next4/" hreflang="ko">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="시선" />
 
@@ -196,7 +196,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
       <li>
         
           <span>/</span>
-          <span>2023-06-29-next1</span>
+          <span>2023-06-29-next4</span>
         
       </li>
     
@@ -213,11 +213,11 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 
 
-<article id="post-next-next1" class="page post mb6" role="article">
+<article id="post-next-next4" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
       
-        1. CSR과 SSR의 차이
+        4. Route를 이용한 메뉴 만들기
       
     </h1>
 
@@ -244,11 +244,11 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
 <img
   
-    src="/assets/img/blog/next-title-1.png"
+    src="/assets/img/blog/next-title-4.png"
     
     
   
-  alt="1. CSR과 SSR의 차이"
+  alt="4. Route를 이용한 메뉴 만들기"
   
   
   width="864"
@@ -267,7 +267,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <p class="note-sm" >
-      Next JS의 프레임워크 장단점
+      Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기.
 
     </p>
   
@@ -277,58 +277,96 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 
   
     <ul class="large-only" id="markdown-toc">
-  <li><a href="#rendering" id="markdown-toc-rendering">Rendering?</a></li>
-  <li><a href="#csr" id="markdown-toc-csr">CSR</a></li>
-  <li><a href="#ssr" id="markdown-toc-ssr">SSR</a></li>
-  <li><a href="#csr과-ssr-차이-한눈에-보기" id="markdown-toc-csr과-ssr-차이-한눈에-보기">CSR과 SSR 차이 한눈에 보기</a></li>
-  <li><a href="#seo" id="markdown-toc-seo">SEO?</a></li>
+  <li><a href="#routing" id="markdown-toc-routing">Routing</a>    <ul>
+      <li><a href="#새로운-페이지-만들기" id="markdown-toc-새로운-페이지-만들기">새로운 페이지 만들기</a></li>
+    </ul>
+  </li>
+  <li><a href="#사이트주소경로1경로2인-페이지-만들기" id="markdown-toc-사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</a>    <ul>
+      <li><a href="#menu와-layoutjs" id="markdown-toc-menu와-layoutjs">menu와 layout.js</a></li>
+    </ul>
+  </li>
+  <li><a href="#모든-폴더에-layoutjs가-필요한가" id="markdown-toc-모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</a></li>
 </ul>
 
-<h2 id="rendering">Rendering?</h2>
-<p>렌더링이란 HTML의 코드를 웹브라우저상에서 보여주는 행위를 말하며 CSR은 Client-Side Rendering이라 하여 client에서 브라우저로 코드를 보내 브라우저에서 작업을 진행하고, SSR은 Sever-Side Rendering이라 하여 서버에서 코드를 작업하여 브라우저로 보내는 특징이 있다.</p>
+<h2 id="routing">Routing</h2>
+<p>URL로 페이지를 나누는 행위를 라우팅이라고 하며 기존 문서 작성을 했을 때 새로운 페이지에 접속하기 위해서는 html 파일을 하나하나 추가해줬어야 했지만 NextJS는 자동라우팅 이라는 기능을 이용하여 손 쉽게 페이지를 만들 수 있다.</p>
 
-<h2 id="csr">CSR</h2>
-<p>Client Side Rendering의 약자로, 웹 최초 접속 시 렌더링에 필요한 모든 HTML을 서버로부터 코드를 받은 후 Client의 조건에 따라 javascript코드를 통해 생성/변경/삭제가 가능한 가변적인 특징을 갖고 있고 이런 특징들로 인해 인터랙티브한 페이지를 제작한다.</p>
+<h3 id="새로운-페이지-만들기">새로운 페이지 만들기</h3>
+<p>app 폴더에 새로운 폴더를 만들어준 뒤 해당 폴더에 page.js를 만들어준다. 이렇게 작업을 진행했다면 /새로운폴더 페이지가 생성이 된다.
+page.js에는 기존 page.js를 긁어오던가 하단의 코드를 복사 후 붙혀넣고
+폴더명 위치에 list가 들어가야 한다면 맨앞글자는 무조건 대문자로 List() 이렇게 작성해주면 된다.</p>
 
-<p>CSR은 단 한 번만 서버에서 코드를 받기 때문에 서버가 받는 부담이 적은 게 장점이지만 단점으로는 검색 엔진 최적화에는 적합하지 못하다. 그 이유는 검색엔진봇이 크롤링을 할 때 JS가 실행되지 않는 미완성 HTML 코드만 들고 가기 때문이다.</p>
+<blockquote>
+  <h1 id="사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</h1>
+  <p><code class="language-plaintext highlighter-rouge">기존 app폴더에 경로1폴더를 생성하고 경로1 폴더 안에 경로2 폴더를 생성한 다음 page.js를 넣고 그 안에 코드를 입력한다.</code></p>
+</blockquote>
 
-<h2 id="ssr">SSR</h2>
-<p>Server Side Rendering의 약자로 CSR과 다르게 렌더링이 필요할 때마다 서버로부터 정해진 HTML 코드를 받아오기 때문에 인터랙티브한 페이지를 제작할 수 없다. 그 때문에 SSR은 템플릿 엔진에서 많이 사용된다.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">폴더명</span><span class="p">(){</span>
+    <span class="k">return</span><span class="p">(</span>
+        <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
 
-<p>CSR과 반대로 렌더링 할 때마다 서버에 요청을 하므로 서버에 부담이 크지만 요청할 때마다 다 짜인 HTML이 제공되기 때문에 검색엔진봇이 더 많은 정보를 가져가서 검색 엔진에 최적화 되어있는 게 장점이다.</p>
+        <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-<h2 id="csr과-ssr-차이-한눈에-보기">CSR과 SSR 차이 한눈에 보기</h2>
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h2 id="menu와-layoutjs">menu와 layout.js</h2>
+<p>메뉴는 모든 페이지에 들어가도 보여야하는 공통 코드다. 이런 코드를 App 폴더내의 page.js에 작성을 하게되면 메인페이지에만 메뉴가 보이고 다른 페이지에서는 메뉴를 확인 할 수 없게 된다. 이를 해결하기 위해서는 page.js를 감싸고 있는 layout.js에다가 작업을 하면 된다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Link</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">next/link</span><span class="dl">"</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./globals.css</span><span class="dl">'</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">metadata</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Create Next App</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">description</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Generated by create next app</span><span class="dl">'</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">RootLayout</span><span class="p">({</span> <span class="nx">children</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="k">return </span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">html</span> <span class="nx">lang</span><span class="o">=</span><span class="dl">"</span><span class="s2">en</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">header</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;&lt;</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="dl">"</span><span class="s2">/</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">홈으로</span><span class="o">&lt;</span><span class="sr">/Link&gt;&lt;/</span><span class="nx">h1</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">nav</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">Link</span> <span class="nx">href</span><span class="o">=</span><span class="dl">"</span><span class="s2">/board</span><span class="dl">"</span><span class="o">&gt;</span><span class="nx">게시판으로</span><span class="o">&lt;</span><span class="sr">/Link</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/nav</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/header&gt;       </span><span class="err"> 
+</span>        <span class="p">{</span><span class="nx">children</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="sr">/body</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/html</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>페이지 변경과 상관없이 계속 노출이 되어야 하는 코드들은 layout.js에 작성을 해준다. 그 이유는</p>
+
+<p><img src="/assets/img/blog/next-4-menu.png" alt="next-4-menu" /></p>
+
+<p>layout.js에서 body 안의 {children}은 routing 되는 모든 page.js를 보여주기 때문이다.
+그래서 공통 코드들은 layout.js에 쓰면 편해질 수 있다.</p>
+
+<blockquote>
+  <h1 id="모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</h1>
+  <p><code class="language-plaintext highlighter-rouge">정답은 '아니다.' 서브페이지 폴더에는 page.js만 존재하는데 layout.js가 없는 경우에는 해당 폴더의 상위 폴더에 layout.js가 있다면 상위에 있는 **모든** layout.js를 합쳐서 보여주기 때문이다.</code></p>
+</blockquote>
 
 <table>
   <thead>
     <tr>
-      <th> </th>
-      <th>Client Side Rendering</th>
-      <th>Server Side Rendering</th>
+      <th>메인페이지 코드</th>
+      <th>서브페이지 코드</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>언어</td>
-      <td>React, Vue</td>
-      <td>Next, PHP</td>
-    </tr>
-    <tr>
-      <td>장점</td>
-      <td>반응속도가 빨라 부드럽게 표현된다</td>
-      <td>초기 렌더링 속도가 빠르다<br />SEO에 유리하다</td>
-    </tr>
-    <tr>
-      <td>단점</td>
-      <td>초기 렌더링 속도가 느리다<br />SEO에 불리하다</td>
-      <td>반응속도가 느리다</td>
+      <td><code class="language-plaintext highlighter-rouge">html &lt;body&gt;&lt;header&gt;메뉴&lt;/header&gt;&lt;div&gt;&lt;h2&gt;메인페이지&lt;/h2&gt;&lt;/div&gt;&lt;/body&gt;</code></td>
+      <td><code class="language-plaintext highlighter-rouge">html &lt;body&gt;&lt;header&gt;메뉴&lt;/header&gt;&lt;div&gt;&lt;h2&gt;서브페이지&lt;/h2&gt;&lt;/div&gt;&lt;/body&gt;</code></td>
     </tr>
   </tbody>
 </table>
-
-<h2 id="seo">SEO?</h2>
-<p>Search Engine Optimization의 약자이며 검색 엔진 최적화라는 의미로 사이트 내 콘텐츠 정보를 검색엔진이 잘 이해하여 검색엔진에서의 검색 결과가 빠지지 않도록 조치할 수 있고 그로 인해 사이트에 방문자 수가 증가하는데 기여를 한다.
-이는 사이트에 광고를 달아 부수입 창출을 할 수 있게 된다.</p>
 
   
 </article>
@@ -453,7 +491,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/next/2023-06-29-next4/" class="flip-title"><span>4. Route를 이용한 메뉴 만들기</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>                        <li class="h4">  <a href="/next/2023-06-29-next3/" class="flip-title"><span>3. NextJS 시작하기</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>                        <li class="h4">  <a href="/next/2023-06-29-next2/" class="flip-title"><span>2. NextJS 작업 환경 셋팅하기</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/next/2023-06-29-next3/" class="flip-title"><span>3. NextJS 시작하기</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>                        <li class="h4">  <a href="/next/2023-06-29-next2/" class="flip-title"><span>2. NextJS 작업 환경 셋팅하기</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>                        <li class="h4">  <a href="/next/2023-06-29-next1/" class="flip-title"><span>1. CSR과 SSR의 차이</span></a>  <time class="faded fine" datetime="2023-06-29T00:00:00+09:00">29 Jun 2023</time></li>            </ul></aside>
 
   
 
