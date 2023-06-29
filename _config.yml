@@ -156,3 +156,7 @@ compress_html:
 
 sass:
   style:               compressed
+
+concurrency:
+  group: audit-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true 
