@@ -79,7 +79,7 @@ menu:
       - title:         NextJS
         url:           /next/
   - title:             Error
-  #   submenu:
+    submenu:
   #     - title:         Javascript
   #       url:           /err-javascript/
   #     - title:         React
