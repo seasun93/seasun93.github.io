@@ -47,7 +47,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta property="twitter:image" content="http://localhost:4000/assets/img/blog/next-title-4.png" />
 <meta property="twitter:title" content="Route를 이용한 메뉴 만들기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-29T12:22:10+09:00","datePublished":"2023-06-29T00:00:00+09:00","description":"Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기.","headline":"Route를 이용한 메뉴 만들기","image":"http://localhost:4000/assets/img/blog/next-title-4.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/next/2023-06-29-next4/"},"url":"http://localhost:4000/next/2023-06-29-next4/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-29T12:33:39+09:00","datePublished":"2023-06-29T00:00:00+09:00","description":"Routing을 이용하여 메뉴를 만들어 서브페이지와 메인페이지를 작업해보기.","headline":"Route를 이용한 메뉴 만들기","image":"http://localhost:4000/assets/img/blog/next-title-4.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/next/2023-06-29-next4/"},"url":"http://localhost:4000/next/2023-06-29-next4/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -112,7 +112,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-06-29T12:23:52+09:00',
+    INDEX_KEY: 'index--2023-06-29T12:33:41+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -279,13 +279,13 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
     <ul class="large-only" id="markdown-toc">
   <li><a href="#routing" id="markdown-toc-routing">Routing</a>    <ul>
       <li><a href="#새로운-페이지-만들기" id="markdown-toc-새로운-페이지-만들기">새로운 페이지 만들기</a></li>
+      <li><a href="#사이트주소경로1경로2인-페이지-만들기" id="markdown-toc-사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</a></li>
     </ul>
   </li>
-  <li><a href="#사이트주소경로1경로2인-페이지-만들기" id="markdown-toc-사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</a>    <ul>
-      <li><a href="#menu와-layoutjs" id="markdown-toc-menu와-layoutjs">menu와 layout.js</a></li>
+  <li><a href="#menu와-layoutjs" id="markdown-toc-menu와-layoutjs">menu와 layout.js</a>    <ul>
+      <li><a href="#모든-폴더에-layoutjs가-필요한가" id="markdown-toc-모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</a></li>
     </ul>
   </li>
-  <li><a href="#모든-폴더에-layoutjs가-필요한가" id="markdown-toc-모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</a></li>
 </ul>
 
 <h2 id="routing">Routing</h2>
@@ -297,7 +297,7 @@ page.js에는 기존 page.js를 긁어오던가 하단의 코드를 복사 후 �
 폴더명 위치에 list가 들어가야 한다면 맨앞글자는 무조건 대문자로 List() 이렇게 작성해주면 된다.</p>
 
 <blockquote>
-  <h1 id="사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</h1>
+  <h3 id="사이트주소경로1경로2인-페이지-만들기">사이트주소/경로1/경로2인 페이지 만들기</h3>
   <p><code class="language-plaintext highlighter-rouge">기존 app폴더에 경로1폴더를 생성하고 경로1 폴더 안에 경로2 폴더를 생성한 다음 page.js를 넣고 그 안에 코드를 입력한다.</code></p>
 </blockquote>
 
@@ -349,7 +349,7 @@ page.js에는 기존 page.js를 긁어오던가 하단의 코드를 복사 후 �
 그래서 공통 코드들은 layout.js에 쓰면 편해질 수 있다.</p>
 
 <blockquote>
-  <h1 id="모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</h1>
+  <h3 id="모든-폴더에-layoutjs가-필요한가">모든 폴더에 layout.js가 필요한가?</h3>
   <p><code class="language-plaintext highlighter-rouge">정답은 '아니다.' 서브페이지 폴더에는 page.js만 존재하는데 layout.js가 없는 경우에는 해당 폴더의 상위 폴더에 layout.js가 있다면 상위에 있는 **모든** layout.js를 합쳐서 보여주기 때문이다.</code></p>
 </blockquote>
 
@@ -362,8 +362,8 @@ page.js에는 기존 page.js를 긁어오던가 하단의 코드를 복사 후 �
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">html &lt;body&gt;&lt;header&gt;메뉴&lt;/header&gt;&lt;div&gt;&lt;h2&gt;메인페이지&lt;/h2&gt;&lt;/div&gt;&lt;/body&gt;</code></td>
-      <td><code class="language-plaintext highlighter-rouge">html &lt;body&gt;&lt;header&gt;메뉴&lt;/header&gt;&lt;div&gt;&lt;h2&gt;서브페이지&lt;/h2&gt;&lt;/div&gt;&lt;/body&gt;</code></td>
+      <td>&lt;body&gt;<br />    &lt;header&gt;메뉴&lt;/header&gt;<br />    &lt;div&gt;<br />        &lt;h2&gt;메인콘텐츠&lt;/h2&gt;<br />    &lt;/div&gt;<br />&lt;/body&gt;</td>
+      <td>&lt;body&gt;<br />    &lt;header&gt;메뉴&lt;/header&gt;<br />    &lt;div&gt;<br />        &lt;h2&gt;서브콘텐츠&lt;/h2&gt;<br />    &lt;/div&gt;<br />&lt;/body&gt;</td>
     </tr>
   </tbody>
 </table>
